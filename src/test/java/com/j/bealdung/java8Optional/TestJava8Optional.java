@@ -11,18 +11,21 @@ import java.util.NoSuchElementException;
 import java.util.Optional;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.MockitoAnnotations;
+import org.mockito.junit.MockitoJUnitRunner;
 
+@RunWith(MockitoJUnitRunner.class   )
 public class TestJava8Optional {
 
   @InjectMocks
   private ModemService modemService;
 
-  @Before
-  public void setUp() {
-    MockitoAnnotations.initMocks(this);
-  }
+//  @Before
+//  public void setUp() {
+//    MockitoAnnotations.initMocks(this);
+//  }
 
   @Test
   public void whenCreatesEmptyOptional_thenCorrect() {
